@@ -15,3 +15,10 @@ $ python crc.py -d flask/src/flask
 > total lines: 6293
 ```
 > Note: this command will process entries only inside `flask/src/flask` folder, but not in its subdirectories
+
+**Counting rows in [linux kernel](https://github.com/torvalds/linux)**
+```
+$ git clone https://github.com/torvalds/linux.git
+$ python crc.py -r -d linux
+> total lines: 45419695
+```
