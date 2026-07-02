@@ -1,7 +1,5 @@
 #!/bin/python3
-"""
-Code rows counter (CRC) source code
-"""
+"""Code rows counter (CRC) source code"""
 
 from typing import Optional
 import os
@@ -51,9 +49,7 @@ def scan_dir(path: str, recursive: bool) -> Optional[int]:
     return _sum
 
 def main():
-    """
-    Main entry for CLI program
-    """
+    """Main entry for CLI program"""
     NOVALUE = object() # pylint: disable=C0103
 
     kwargs: dict[str, Optional[list[str]]] = {}
@@ -79,7 +75,7 @@ def main():
 
     if kwargs.get("--verbose", None) is not None or kwargs.get("-v") is not None:
         verbose = True
-    
+
     if kwargs.get("--recursive", None) is not None or kwargs.get("-r", None) is not None:
         recursive = True
 
