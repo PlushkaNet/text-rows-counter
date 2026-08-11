@@ -1,4 +1,4 @@
-#!/usr/bin/python3
+#!/usr/bin/env python3
 """
 Text rows counter (TRC) - Utility for counting lines in text files and directories.
 
